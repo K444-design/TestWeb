@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UFT-8">
+    <title>Reservation d'Hotel - Ouagadougou</title>
+    <link rel="stylesheet" href="style1.css">
+  </head>
+  <body>
+    <header>
+	<img src="./1234.png" alt="logo du groupe" id="logo"/>
+	<h1>Ouagadougou et ses sites touristiques</h1>
+			<nav>
+			  <a href="index.html" class="active">Accueil</a>
+			  <a href="patrimoine.html">Patrimoine</a>
+			  <a href="Reservation d'hotel.html">Reservation d'hotel</a>
+			  <a href="galerie.html">Galerie</a>
+			</nav>
+		</header>
+ 
+    <main>
+        <section class="form-container">
+           <h1>Formulaire de Reservation</h1>
+            <p>Veuillez remplir ce formulaire pour planifier votre séjour dans la belle capitale Ouagadougou,capitale du cinéma africain</p>
+            <form action="#" method="POST">
+                <!--Section 1 : coordonnées-->
+                <fieldset>
+<p align="center"> <legend>Vos Informations</legend></p>
+                        <label for="nom">Nom:</label>
+                        <input type="text" id="nom" name="nom"required><br><br>
+                        <label for="prenom">Prénom:</label>
+                        <input type="text" id="prenom" name="prenomnom"required><br><br>
+                        <label for="email">Adresse Email:</label>
+                        <input type="email" id="email" name="email"required><br><br>
+                        <label for="telephone">Téléphone:</label>
+                        <input type="tel" id="telephone" name="telephone"required><br><br>
+                </fieldset>
+                 <!--Section 2 : Sélection de l'hôtel et Dates-->
+                    <fieldset>
+                       <p align="center"><legend>Votre hébergement</legend></p>
+                        <label for="hotel">Sélectionnez votre hôtel:</label>
+                        <select id="hotel" name="hotel" required>
+                            <option value="">--Choisissez un établissement--</option>
+                         <option value="brava">Hôtel Bravia Ouagadougou</option>
+                        <option value="laico">Hôtel Laico Ouaga 2000</option>
+                    <option value="independance">Hôtel AzalaÏ  Independance</option>
+                       <option value="silmande">Hôtel Sopatel Silmandé</option>
+                    <option value="liberte">Hôtel de la liberté</option>
+                    </select>
+                    <div class="dates-group">
+                        <div>
+                         <label for="date-arrivee">Date d'arrivée</label>
+                         <input type="date" id="date-arrivee name=date_arrivee" required><br><br>
+                         <label for="date-depart">Date de départ</label>
+                         <input type="date" id="date-depart name=date_depart" required><br><br>
+                        </div>
+                    </div>
+                    <label>Type de chambre:</label>
+                     <div class="radio-group">
+                        <input type="radio" id="standard" name="type_chambre" value="standard" checked>
+                        <label for="standard">Standard (Ventilée/Climatisée)</label>
+                        <input type="radio" id="premium" name="type_chambre" value="premium">
+                        <label for="premium">Premium</label>
+                        <input type="radio" id="suite" name="type_chambre" value="suite">
+                        <label for="suite">Suite VIP</label>
+                     </div>
+                     <label for="personnes">Nombre de personnes:</label>
+                     <input type="number" id="personnes" name="nombre_personnes" min="1" max="5" value="1" required><br><br>
+                     <label for="paiement">Mode de paiement prévu à l'arrivée:</label>
+                   <select id="paiement" name="paiement">
+                    <option value="especes">Espèces(FCFA)</option>
+                    <option value="orange_money">Orange Money</option>
+                    <option value="moov_money">Moov Money</option>
+                    <option value="carte">Carte Bancaire</option>
+                   </select>
+                    </fieldset>
+                    <!--Section 3 : Préférences-->
+                    <fieldset>
+                        <p align="center"><legend>Options Supplémentaires</legend></p>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="navette" name="options" value="navette_aeroport">
+                            <label for="navette">Navette depuis l'Aéroport international de Ouagadougou</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="dej" name="options" value="petit_dejeuner">
+                            <label for="dej">Petit-déjeuner inclus</label>
+                        </div>
+                             <div class="checkbox-group">
+                            <input type="checkbox" id="guide" name="options" value="guide_touristique">
+                            <label for="guide">Demander un guide touristique pour visiter la ville</label>
+                            </div>
+                                     <label for="remarques">Demandes particulières:</label>
+                                     <textarea id="remarques" name="remarques" rows="3"></textarea>
+                                     </fieldset>
+                                     <button type="submit" class="btn-submit">Soumettre la demande</button>
+            </form>
+    
+        </section>
+    </main>
+    <footer>
+    <div id="identite">
+	    <h3>Identité des auteurs</h3>
+		<p>NABEWLE SOMDA Kô Sylvain</p>
+		<p>Coulibaly Yabil Samira leïlatou</p>
+		<p>KAMBIRE Marie Madeleine<P/>
+        <p>Batango Amed </P>
+	</div>
+	<div id="contacte">
+	     <h4>contacts:</h4>
+		 <p>+226 56685072</p>
+		 <p>226 77001869</p>
+		 <p>226 64104231</p>
+		 <p>226 55019579</p>
+    </div>
+	    
+</footer>
+
+  </body>
+</html>
